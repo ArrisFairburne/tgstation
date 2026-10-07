@@ -122,6 +122,7 @@
 	)
 	if (ranged_cooldown <= 1 SECONDS)
 		AddComponent(/datum/component/ranged_mob_full_auto)
+	ai_controller.set_blackboard_key(BB_PROJECTILE_TYPE, initial(casingtype.projectile))
 
 /mob/living/basic/trooper/syndicate/ranged/infiltrator //shuttle loan event
 	projectilesound = 'sound/items/weapons/gun/smg/shot_suppressed.ogg'
